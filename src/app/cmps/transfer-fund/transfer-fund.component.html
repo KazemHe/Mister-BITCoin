@@ -1,0 +1,13 @@
+<section class="transfer-fund">
+    <form (submit)="onTranfer()">
+        <h3>Transfer coins to {{ contact.name}} :</h3>
+        <div>
+            <label for="amount-input">Amount: </label>
+            <input type="number" id="amount-input" name="amount" [(ngModel)]="amount" />
+
+        </div>
+        <!-- <span *ngIf="amount > maxCoins">Amount cannot be greater than {{ maxCoins }}.</span> -->
+        <button type="submit"> <i class="fa-solid fa-money-bill-transfer"> </i></button>
+
+    </form>
+</section>

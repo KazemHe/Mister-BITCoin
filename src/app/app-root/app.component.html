@@ -1,0 +1,31 @@
+<section class="main-app">
+    <header class="container">
+     
+        
+            <div class="nav" routerLink="Home"> <i class="fa-solid fa-house"></i></div>
+            <div class="nav" [routerLink]="['Contacts']"><i class="fa-solid fa-users-between-lines"></i></div>
+            <div class="nav" [routerLink]="['Statistic']"><i class="fa-solid fa-chart-simple"></i></div>
+    
+    </header>
+  
+    <!-- <nav class="nav-container">
+        <ul>
+            <li routerLink="Home">Home</li>
+            <li [routerLink]="['Contacts']">Contacts</li>
+            <li [routerLink]="['Statistic']">statistic</li>
+        </ul>
+    </nav> -->
+    <main class="container">
+        <!-- <home-page></home-page>
+        <contact-index></contact-index> -->
+
+
+        <router-outlet></router-outlet>
+
+    </main>
+
+    <footer class="container">
+        <p>ContactsRights &copy;</p>
+    </footer>
+
+</section>

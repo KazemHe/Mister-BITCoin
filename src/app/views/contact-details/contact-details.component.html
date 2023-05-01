@@ -1,0 +1,23 @@
+<section *ngIf="(contact$ | async) as contact" class="contact-details">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbNOpai32_rwcRrMxmpF4sNJG3CIR7yTPv7MD9qK4Ft5OdltMU6DymiRqxXRb0qtgGJoE&usqp=CAU"
+        alt="">
+    <p><b>Name:</b> {{contact.name}}</p>
+    <p><b>phone:</b> {{contact.phone}}</p>
+    <p><b>E-mail</b> {{contact.email}}</p>
+
+
+    <button class="back-btn" (click)="onBack()">Back</button>
+    <section class="actions">
+
+    </section>
+    <span *ngIf="ans" class="ans">{{ans}}</span>
+
+
+    <transfer-fund [contact]="contact"></transfer-fund>
+
+    <moves-list [contact]="contact"></moves-list>
+
+    <ng-container *ngIf="contact.name as contactName">
+
+    </ng-container>
+</section>

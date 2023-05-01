@@ -1,0 +1,33 @@
+.contact-edit {
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    inset: 0;
+    top: -10%;
+    margin: auto;
+    background-color: rgba(3, 4, 3, 0.805);
+    // border: orangered 3px solid;
+    box-shadow: -3px 1px 28px #00000061;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        label {
+            margin-top: 1em;
+        }
+
+        button {
+          border-radius: 7px;
+            display: block;
+            margin: 20px auto;
+        }
+    }
+}
+
+.fa-xmark{
+    cursor: pointer;
+}

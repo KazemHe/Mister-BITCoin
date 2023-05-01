@@ -1,0 +1,7 @@
+<section class="contact-index">
+    <contact-filter></contact-filter>
+    <a routerLink="/Contacts/edit"><i class="fa-solid fa-circle-plus"></i></a>
+    <contact-list (remove)="onRemoveContact($event)" [contacts]="contacts$ | async" ></contact-list>
+</section>
+
+<router-outlet></router-outlet>
