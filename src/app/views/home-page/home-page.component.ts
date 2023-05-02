@@ -20,8 +20,8 @@ export class HomePageComponent implements OnInit {
     }
 
 
-    // this.bitcoinService.getRate(this.user.coins).then(rate => {
-    //   this.rate = rate;
-    // });
+    this.bitcoinService.getRate(this.user.coins).then(rate => {
+      this.rate = rate;
+    });
   }
 }
